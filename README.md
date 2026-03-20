@@ -47,7 +47,7 @@ I am highly adaptable, detail-oriented, and committed to delivering high-quality
 * Edited and optimized videos for social media
 * Focus on storytelling, clarity, and engagement
 
-🔗 Repository: (Add your repo link here)
+🔗 Repository: (https://github.com/GetWrecker/ai-video-portfolio)
 
 ---
 
@@ -57,8 +57,6 @@ I am highly adaptable, detail-oriented, and committed to delivering high-quality
 * Complaint handling and resolution templates
 * Professional tone and structured replies
 
-🔗 Repository: (Add your repo link here)
-
 ---
 
 ### 💻 Basic Coding Projects
@@ -67,7 +65,6 @@ I am highly adaptable, detail-oriented, and committed to delivering high-quality
 * Clean and readable code structure
 * Organized using GitHub repositories
 
-🔗 Repository: (Add your repo link here)
 
 ---
 
@@ -101,8 +98,8 @@ Canalate Elementary School
 
 ## 📬 Contact
 
-* 📧 Email: (your email here)
-* 💻 GitHub: [https://github.com/yourusername](https://github.com/yourusername)
+* 📧 Email: (paulcarandang1987@gmail.com)
+* 💻 GitHub: [https://github.com/GetWrecker](https://github.com/GetWrecker)
 
 ---
 
@@ -110,7 +107,6 @@ Canalate Elementary School
 
 * Reliable non-voice customer support
 * AI-powered video content creation
-* Basic technical and programming support
 * Strong attention to detail and consistency
 
 ---
