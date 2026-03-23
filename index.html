@@ -3,233 +3,223 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paul Carandang</title>
+<title>Paul Carandang Portfolio</title>
 
 <style>
-:root {
-  --text: #222;
-  --muted: #555;
-  --border: #ddd;
-  --link: #0366d6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  font-family: system-ui, -apple-system, Arial, sans-serif;
-  margin: 0;
-  color: var(--text);
-  background: #fff;
-  line-height: 1.6;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e2e8f0;
+  scroll-behavior: smooth;
 }
 
-/* Layout */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(2,6,23,0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
 }
 
-/* Header */
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
 header {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-h1 {
-  margin: 0;
-  font-size: 28px;
+header h1 {
+  font-size: 3rem;
+  color: #38bdf8;
 }
 
-.subtitle {
-  color: var(--muted);
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
-/* Sections */
 section {
-  margin-bottom: 30px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
-h2 {
-  font-size: 20px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 5px;
+.card {
+  background: rgba(30,41,59,0.6);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-/* Grid */
+.card:hover {
+  transform: translateY(-5px);
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
 }
 
-@media (min-width: 700px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Cards */
-.card {
-  border: 1px solid var(--border);
-  padding: 15px;
-}
-
-/* Lists */
-ul {
-  margin: 8px 0 0 18px;
-}
-
-/* Links */
-a {
-  color: var(--link);
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 5px;
   text-decoration: none;
+  margin-top: 10px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
-  border-top: 1px solid var(--border);
-  padding-top: 10px;
-  color: var(--muted);
-  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  background: #020617;
 }
 
-/* Small interaction */
-.card:hover {
-  background: #fafafa;
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 <header>
-  <h1>Paul Adriano Carandang</h1>
-  <p class="subtitle">Non-Voice Customer Support | AI Video Creator | Entry-Level Programmer</p>
+  <h1>👋 Paul Adriano Carandang</h1>
+  <p>Non-Voice Customer Support | AI Video Creator | Programmer</p>
 </header>
 
-<section>
-<h2>About Me</h2>
+<section id="about" class="fade">
+<h2>🧑‍💻 About Me</h2>
+<div class="card">
 <p>
-I am an entry-level Non-Voice Customer Service Representative with strong written communication skills, fast typing, and attention to detail. I handle customer concerns through chat and email with a focus on clarity, professionalism, and accuracy.
+Entry-level Non-Voice Customer Support Representative with strong written communication, fast typing skills, and attention to detail. I handle chat and email support professionally and efficiently.
 </p>
 <p>
-I also create AI-generated videos from scripts and edit them into simple but effective content. I have basic knowledge in programming and Git workflows, and I continue to improve my skills over time.
+I also create AI-generated videos from scripts and edit them into engaging content using modern tools.
 </p>
+</div>
 </section>
 
-<section>
-<h2>Skills</h2>
+<section id="skills" class="fade">
+<h2>🚀 Skills</h2>
+
+<div class="grid">
+<div class="card">
+<h3>🗨️ Customer Support</h3>
+<ul>
+<li>Email & Chat Support</li>
+<li>Problem Solving</li>
+<li>Professional Writing</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🎬 AI Content</h3>
+<ul>
+<li>Script to Video</li>
+<li>CapCut Editing</li>
+<li>AI Tools</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💻 Technical</h3>
+<ul>
+<li>HTML Basics</li>
+<li>GitHub</li>
+<li>MS Office</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<section id="projects" class="fade">
+<h2>📂 Projects</h2>
 
 <div class="grid">
 
 <div class="card">
-<strong>Customer Support</strong>
-<ul>
-<li>Email and chat support</li>
-<li>Clear written communication</li>
-<li>Problem-solving</li>
-<li>Attention to detail</li>
-</ul>
+<h3>🎬 AI Video Portfolio</h3>
+<p>AI-generated videos from scripts optimized for social media.</p>
+<a href="https://github.com/GetWrecker/ai-video-portfolio" class="btn">View Repo</a>
 </div>
 
 <div class="card">
-<strong>AI Video & Content</strong>
-<ul>
-<li>Script to video workflow</li>
-<li>AI narration tools</li>
-<li>CapCut editing</li>
-<li>Basic content optimization</li>
-</ul>
+<h3>💬 Customer Support Portfolio</h3>
+<p>Professional chat/email templates and responses.</p>
+<a href="https://github.com/GetWrecker/customer-support-portfolio" class="btn">View Repo</a>
 </div>
 
 <div class="card">
-<strong>Technical</strong>
-<ul>
-<li>Basic HTML and scripting</li>
-<li>GitHub usage</li>
-<li>Microsoft Office</li>
-<li>Data handling</li>
-</ul>
-</div>
+<h3>💻 Coding Projects</h3>
+<p>Simple apps with clean and readable code.</p>
 
 </div>
 </section>
 
-<section>
-<h2>Projects</h2>
-
+<section id="contact" class="fade">
+<h2>📬 Contact</h2>
 <div class="card">
-<strong>AI Video Portfolio</strong>
-<p>Created videos from scripts using AI tools and edited for social media use.</p>
-<a href="https://github.com/GetWrecker/ai-video-portfolio">View repository</a>
-</div>
-
-<div class="card">
-<strong>Customer Support Portfolio</strong>
-<p>Collection of sample responses and templates for handling customer concerns.</p>
-<a href="https://github.com/GetWrecker/customer-support-portfolio">View repository</a>
-</div>
-
-<div class="card">
-<strong>Basic Coding Projects</strong>
-<p>Simple applications and scripts with organized and readable structure.</p>
-<a href="https://github.com/GetWrecker/basic-coding-projects">View repository</a>
-</div>
-
-</section>
-
-<section>
-<h2>Work Experience</h2>
-<p><strong>Intern Secretary</strong><br>
-Office of City Prosecutor 2, Malolos City, Bulacan<br>
-Nov 2007 – Mar 2008</p>
-
-<ul>
-<li>Maintained and organized legal documents</li>
-<li>Assisted in preparing reports</li>
-<li>Handled confidential records</li>
-<li>Performed accurate data entry</li>
-<li>Used Microsoft Office tools</li>
-</ul>
-</section>
-
-<section>
-<h2>Education</h2>
-
-<p><strong>Associate Degree in Computer Science</strong><br>
-Manila Montessori College International</p>
-
-<p><strong>High School</strong><br>
-San Roque High School</p>
-
-<p><strong>Elementary</strong><br>
-Canalate Elementary School</p>
-
-</section>
-
-<section>
-<h2>Contact</h2>
 <p>Email: paulcarandangml1987@gmail.com</p>
 <p>GitHub: <a href="https://github.com/GetWrecker">GetWrecker</a></p>
+</div>
 </section>
 
 <footer>
-<p>Continuously learning and improving in AI tools, customer support, and technology.</p>
+⭐ Always learning and improving in AI, support, and tech
 </footer>
 
-</div>
-
 <script>
-// simple interaction (human-like, not flashy)
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('click', () => {
-    card.style.borderColor = '#0366d6';
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
   });
 });
 </script>
