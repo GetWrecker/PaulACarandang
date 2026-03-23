@@ -17,6 +17,12 @@ body {
   background: linear-gradient(135deg, #020617, #0f172a);
   color: #e2e8f0;
   scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+body.light {
+  background: #ffffff;
+  color: #222;
 }
 
 nav {
@@ -38,10 +44,6 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  color: white;
-}
-
 header {
   height: 100vh;
   display: flex;
@@ -54,11 +56,6 @@ header {
 header h1 {
   font-size: 3rem;
   color: #38bdf8;
-}
-
-header p {
-  margin-top: 10px;
-  font-size: 1.2rem;
 }
 
 section {
@@ -96,6 +93,20 @@ section {
   margin-top: 10px;
 }
 
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.toggle {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -117,26 +128,29 @@ footer {
 
 <body>
 
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
 <nav>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
+  <a href="#videos">Videos</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <header>
   <h1>👋 Paul Adriano Carandang</h1>
-  <p>Non-Voice Customer Support | AI Video Creator | Programmer</p>
+  <p id="typing"></p>
 </header>
 
 <section id="about" class="fade">
 <h2>🧑‍💻 About Me</h2>
 <div class="card">
 <p>
-Entry-level Non-Voice Customer Support Representative with strong written communication, fast typing skills, and attention to detail. I handle chat and email support professionally and efficiently.
+Entry-level Non-Voice Customer Support Representative with strong written communication, fast typing skills, and attention to detail.
 </p>
 <p>
-I also create AI-generated videos from scripts and edit them into engaging content using modern tools.
+I create AI-generated videos from scripts and edit them into engaging content.
 </p>
 </div>
 </section>
@@ -166,7 +180,7 @@ I also create AI-generated videos from scripts and edit them into engaging conte
 <div class="card">
 <h3>💻 Technical</h3>
 <ul>
-<li>HTML Basics</li>
+<li>Programming (HTML, scripting)</li>
 <li>GitHub</li>
 <li>MS Office</li>
 </ul>
@@ -182,21 +196,41 @@ I also create AI-generated videos from scripts and edit them into engaging conte
 
 <div class="card">
 <h3>🎬 AI Video Portfolio</h3>
-<p>AI-generated videos from scripts optimized for social media.</p>
+<p>AI-generated videos from scripts.</p>
 <a href="https://github.com/GetWrecker/ai-video-portfolio" class="btn">View Repo</a>
 </div>
 
 <div class="card">
 <h3>💬 Customer Support Portfolio</h3>
-<p>Professional chat/email templates and responses.</p>
+<p>Chat/email response samples.</p>
 <a href="https://github.com/GetWrecker/customer-support-portfolio" class="btn">View Repo</a>
 </div>
 
 <div class="card">
 <h3>💻 Coding Projects</h3>
-<p>Simple apps with clean and readable code.</p>
+<p>Simple applications.</p>
+<a href="https://github.com/GetWrecker/basic-coding-projects" class="btn">View Repo</a>
+</div>
 
 </div>
+</section>
+
+<!-- NEW VIDEO SECTION -->
+<section id="videos" class="fade">
+<h2>🎬 Video Samples</h2>
+
+<div class="card">
+<video controls>
+<source src="video1.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="card">
+<video controls>
+<source src="video2.mp4" type="video/mp4">
+</video>
+</div>
+
 </section>
 
 <section id="contact" class="fade">
@@ -212,8 +246,8 @@ I also create AI-generated videos from scripts and edit them into engaging conte
 </footer>
 
 <script>
+// SCROLL ANIMATION
 const elements = document.querySelectorAll('.fade');
-
 window.addEventListener('scroll', () => {
   elements.forEach(el => {
     const position = el.getBoundingClientRect().top;
@@ -222,6 +256,23 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// DARK MODE
+function toggleMode(){
+  document.body.classList.toggle('light');
+}
+
+// TYPING EFFECT
+const text = "Non-Voice Customer Support | AI Video Creator | Programmer";
+let i = 0;
+function type(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 40);
+  }
+}
+type();
 </script>
 
 </body>
