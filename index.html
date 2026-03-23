@@ -1,204 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paul Carandang Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paul Carandang</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<style>
+:root {
+  --text: #222;
+  --muted: #555;
+  --border: #ddd;
+  --link: #0366d6;
+}
 
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background: #020617;
-    }
+body {
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.6;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #38bdf8;
-    }
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    h2 {
-      color: #38bdf8;
-      margin-top: 40px;
-    }
+/* Header */
+header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
+.subtitle {
+  color: var(--muted);
+}
 
-    ul {
-      padding-left: 20px;
-    }
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 5px;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      background: #020617;
-      font-size: 0.9em;
-    }
-  </style>
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border);
+  padding: 15px;
+}
+
+/* Lists */
+ul {
+  margin: 8px 0 0 18px;
+}
+
+/* Links */
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Small interaction */
+.card:hover {
+  background: #fafafa;
+}
+</style>
 </head>
 
 <body>
 
+<div class="container">
+
 <header>
-  <h1>👋 Hi, I'm Paul Adriano Carandang</h1>
-  <p>💼 Non-Voice Customer Support | AI Video Creator | Entry-Level Programmer</p>
+  <h1>Paul Adriano Carandang</h1>
+  <p class="subtitle">Non-Voice Customer Support | AI Video Creator | Entry-Level Programmer</p>
 </header>
 
 <section>
-  <h2>🧑‍💻 About Me</h2>
-  <div class="card">
-    <p>
-      I am an entry-level Non-Voice Customer Service Representative with strong written communication, fast typing skills, and keen attention to detail. I specialize in handling customer concerns through chat and email while maintaining professionalism, clarity, and accuracy.
-    </p>
-    <p>
-      In addition to customer support, I create AI-generated video content from scripts and edit them into engaging visual stories using modern tools. I also have foundational knowledge in programming and Git-based workflows.
-    </p>
-    <p>
-      I am highly adaptable, detail-oriented, and committed to delivering high-quality work in both technical and creative environments.
-    </p>
-  </div>
+<h2>About Me</h2>
+<p>
+I am an entry-level Non-Voice Customer Service Representative with strong written communication skills, fast typing, and attention to detail. I handle customer concerns through chat and email with a focus on clarity, professionalism, and accuracy.
+</p>
+<p>
+I also create AI-generated videos from scripts and edit them into simple but effective content. I have basic knowledge in programming and Git workflows, and I continue to improve my skills over time.
+</p>
+</section>
 
-  <h2>🚀 Skills</h2>
+<section>
+<h2>Skills</h2>
 
-  <div class="card">
-    <h3>🗨️ Customer Support</h3>
-    <ul>
-      <li>Email and chat support handling</li>
-      <li>Professional written communication</li>
-      <li>Problem-solving and issue resolution</li>
-      <li>Attention to detail and accuracy</li>
-    </ul>
-  </div>
+<div class="grid">
 
-  <div class="card">
-    <h3>🎬 AI Video & Content Creation</h3>
-    <ul>
-      <li>Script-to-video conversion</li>
-      <li>AI-generated narration workflows</li>
-      <li>Video editing (CapCut)</li>
-      <li>Social media content optimization</li>
-    </ul>
-  </div>
+<div class="card">
+<strong>Customer Support</strong>
+<ul>
+<li>Email and chat support</li>
+<li>Clear written communication</li>
+<li>Problem-solving</li>
+<li>Attention to detail</li>
+</ul>
+</div>
 
-  <div class="card">
-    <h3>💻 Technical Skills</h3>
-    <ul>
-      <li>Basic programming (HTML, simple scripts)</li>
-      <li>Git & GitHub version control</li>
-      <li>Microsoft Office (Word, Excel, PowerPoint)</li>
-      <li>Data entry and file organization</li>
-    </ul>
-  </div>
+<div class="card">
+<strong>AI Video & Content</strong>
+<ul>
+<li>Script to video workflow</li>
+<li>AI narration tools</li>
+<li>CapCut editing</li>
+<li>Basic content optimization</li>
+</ul>
+</div>
 
-  <h2>📂 Featured Projects</h2>
+<div class="card">
+<strong>Technical</strong>
+<ul>
+<li>Basic HTML and scripting</li>
+<li>GitHub usage</li>
+<li>Microsoft Office</li>
+<li>Data handling</li>
+</ul>
+</div>
 
-  <div class="card">
-    <h3>🎬 AI Video Portfolio</h3>
-    <ul>
-      <li>Created narrative videos from scripts using AI tools</li>
-      <li>Edited and optimized videos for social media</li>
-      <li>Focus on storytelling and engagement</li>
-    </ul>
-    <p>🔗 <a href="https://github.com/GetWrecker/ai-video-portfolio">https://github.com/GetWrecker/ai-video-portfolio</a></p>
-  </div>
+</div>
+</section>
 
-  <div class="card">
-    <h3>💬 Customer Support Portfolio</h3>
-    <ul>
-      <li>Sample email and chat responses</li>
-      <li>Complaint handling templates</li>
-      <li>Professional tone and structured replies</li>
-    
-  <div class="card">
-    <h3>💻 Basic Coding Projects</h3>
-    <ul>
-      <li>Simple apps and scripts</li>
-      <li>Clean and readable code</li>
-      <li>Organized GitHub repositories</li>
+<section>
+<h2>Projects</h2>
 
-  <h2>💼 Work Experience</h2>
-  <div class="card">
-    <p><strong>Intern Secretary</strong><br>
-    Office of City Prosecutor 2 • Malolos City, Bulacan<br>
-    Nov 2007 – Mar 2008</p>
+<div class="card">
+<strong>AI Video Portfolio</strong>
+<p>Created videos from scripts using AI tools and edited for social media use.</p>
+<a href="https://github.com/GetWrecker/ai-video-portfolio">View repository</a>
+</div>
 
-    <ul>
-      <li>Organized and maintained legal documents and case files</li>
-      <li>Assisted in preparing legal documents and reports</li>
-      <li>Managed confidential files</li>
-      <li>Performed accurate data entry</li>
-      <li>Created documents using Microsoft Office</li>
-    </ul>
-  </div>
+<div class="card">
+<strong>Customer Support Portfolio</strong>
+<p>Collection of sample responses and templates for handling customer concerns.</p>
+<a href="https://github.com/GetWrecker/customer-support-portfolio">View repository</a>
+</div>
 
-  <h2>🎓 Education</h2>
-  <div class="card">
-    <p><strong>Associate Degree in Computer Science</strong><br>
-    Manila Montessori College International • Malolos City, Bulacan</p>
+<div class="card">
+<strong>Basic Coding Projects</strong>
+<p>Simple applications and scripts with organized and readable structure.</p>
+<a href="https://github.com/GetWrecker/basic-coding-projects">View repository</a>
+</div>
 
-    <p><strong>High School</strong><br>
-    San Roque High School • Paombong, Bulacan</p>
+</section>
 
-    <p><strong>Elementary</strong><br>
-    Canalate Elementary School</p>
-  </div>
+<section>
+<h2>Work Experience</h2>
+<p><strong>Intern Secretary</strong><br>
+Office of City Prosecutor 2, Malolos City, Bulacan<br>
+Nov 2007 – Mar 2008</p>
 
-  <h2>📬 Contact</h2>
-  <div class="card">
-    <p>📧 Email: paulcarandang1987@email.com</p>
-    <p>💻 GitHub: <a href="https://github.com/GetWrecker">GetWrecker</a></p>
-  </div>
+<ul>
+<li>Maintained and organized legal documents</li>
+<li>Assisted in preparing reports</li>
+<li>Handled confidential records</li>
+<li>Performed accurate data entry</li>
+<li>Used Microsoft Office tools</li>
+</ul>
+</section>
 
-  <h2>🔥 What I Offer</h2>
-  <div class="card">
-    <ul>
-      <li>Reliable non-voice customer support</li>
-      <li>AI-powered video content creation</li>
-      <li>Basic technical and programming support</li>
-      <li>Strong attention to detail</li>
-    </ul>
-  </div>
+<section>
+<h2>Education</h2>
 
+<p><strong>Associate Degree in Computer Science</strong><br>
+Manila Montessori College International</p>
+
+<p><strong>High School</strong><br>
+San Roque High School</p>
+
+<p><strong>Elementary</strong><br>
+Canalate Elementary School</p>
+
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Email: paulcarandangml1987@gmail.com</p>
+<p>GitHub: <a href="https://github.com/GetWrecker">GetWrecker</a></p>
 </section>
 
 <footer>
-  ⭐ Continuously learning and improving in AI tools, customer service, and technology.
+<p>Continuously learning and improving in AI tools, customer support, and technology.</p>
 </footer>
 
-</body>
-  </html><li><a href="https://github.com/GetWrecker/PaulACarandango">Portfolio</a></li>
-</ul>
-</section>
+</div>
+
+<script>
+// simple interaction (human-like, not flashy)
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.style.borderColor = '#0366d6';
+  });
+});
+</script>
 
 </body>
 </html>
