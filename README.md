@@ -25,7 +25,7 @@ AI-generated content creation (script to video)
 
 Video editing (CapCut)
 
-Basic programming and web development
+Programming and web development
 
 
 
