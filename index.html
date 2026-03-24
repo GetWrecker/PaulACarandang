@@ -14,10 +14,13 @@
 }
 
 body {
-  background: linear-gradient(135deg, #020617, #0f172a);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   color: #e2e8f0;
-  scroll-behavior: smooth;
-  transition: 0.3s;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(34,197,94,0.12), transparent 40%),
+    linear-gradient(135deg, #020617, #0f172a);
 }
 
 body.light {
@@ -56,6 +59,11 @@ header {
 header h1 {
   font-size: 3rem;
   color: #38bdf8;
+}
+
+header p {
+  margin-top: 10px;
+  color: #94a3b8;
 }
 
 section {
@@ -137,8 +145,16 @@ footer {
   <a href="#videos">Videos</a>
   <a href="#contact">Contact</a>
 </nav>
-
-<header>
+  
+.profile-pic {
+  transition: 0.3s;
+}
+<img src="https://avatars.githubusercontent.com/u/157026006?s=96&v=4" alt="Profile Photo" class="profile-pic">
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(56,189,248,0.7);
+}
+  <header>
   <h1>👋 Paul Adriano Carandang</h1>
   <p id="typing"></p>
 </header>
