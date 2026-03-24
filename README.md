@@ -1,107 +1,144 @@
-# 👋 Hi, I'm Paul Adriano Carandang
+👋 Paul Carandang Portfolio
 
-## 💼 Non-Voice Customer Support | AI Video Creator | Entry-Level Programmer
+> A modern personal portfolio showcasing my projects, skills, and experience in customer support, AI content creation, and programming.
 
----
 
-## 🧑‍💻 About Me
-
-I am an entry-level Non-Voice Customer Service Representative with strong written communication, fast typing skills, and keen attention to detail. I specialize in handling customer concerns through chat and email while maintaining professionalism, clarity, and accuracy.
-
-In addition to customer support, I create AI-generated video content from scripts and edit them into engaging visual stories using modern tools. I also have foundational knowledge in programming and Git-based workflows.
-
-I am highly adaptable, detail-oriented, and committed to delivering high-quality work in both technical and creative environments.
-
----
-
-## 🚀 Skills
-
-### 🗨️ Customer Support
-
-* Email and chat support handling
-* Professional written communication
-* Problem-solving and issue resolution
-* Attention to detail and accuracy
-
-### 🎬 AI Video & Content Creation
-
-* Script-to-video conversion
-* AI-generated narration workflows
-* Video editing (CapCut)
-* Social media content optimization (TikTok, Facebook, YouTube)
-
-### 💻 Technical Skills
-
-* Basic programming (HTML, simple scripts)
-* Git & GitHub version control
-* Microsoft Office (Word, Excel, PowerPoint)
-* Data entry and file organization
-
----
-
-## 📂 Featured Projects
-
-### 🎬 AI Video Portfolio
-
-* Created narrative videos from scripts using AI tools
-* Edited and optimized videos for social media
-* Focus on storytelling, clarity, and engagement
-
-🔗 Repository: (https://github.com/GetWrecker/ai-video-portfolio)
-
----
-
-### 💬 Customer Support Portfolio
-
-* Sample email and chat responses
-* Complaint handling and resolution templates
-* Professional tone and structured replies
-
----
-
-### 💻 Basic Coding Projects
-
-* Simple apps and scripts
-* Clean and readable code structure
-* Organized using GitHub repositories
 
 
 ---
 
-## 💼 Work Experience
+🌐 Live Demo
 
-**Intern Secretary**
-Office of City Prosecutor 2 • Malolos City, Bulacan
-Nov 2007 – Mar 2008
+👉 View Portfolio
+(Replace with your actual Vercel link)
 
-* Organized and maintained legal documents and case files
-* Assisted in preparing legal documents and reports
-* Managed confidential files for easy retrieval
-* Performed accurate data entry tasks
-* Created documents using Microsoft Office tools
 
 ---
 
-## 🎓 Education
+🧠 About Me
 
-**Associate Degree in Computer Science**
-Manila Montessori College International • Malolos City, Bulacan
-Nov 2006 – Mar 2008
+I’m an entry-level Non-Voice Customer Support Representative with strong written communication, fast typing skills, and attention to detail.
 
-**High School**
-San Roque High School • Paombong, Bulacan
+I also work with:
 
-**Elementary**
-Canalate Elementary School
+AI-generated content creation (script to video)
+
+Video editing (CapCut)
+
+Basic programming and web development
+
+
+
+---
+
+🚀 Tech Stack
+
+    
+
 
 ---
 
-## 📬 Contact
+✨ Features
 
-* 📧 Email: (paulcarandang1987@gmail.com)
-* 💻 GitHub: [https://github.com/GetWrecker](https://github.com/GetWrecker)
+🌙 Dark / Light mode toggle
+
+🎯 Smooth scroll navigation
+
+✨ Scroll animations
+
+⌨️ Typing animation effect
+
+🎬 Embedded video samples
+
+💬 Chatbot integration
+
+📱 Responsive design
+
+
 
 ---
+
+📂 Projects
+
+🎬 AI Video Portfolio
+
+AI-generated videos created from scripts and edited for engaging content.
+🔗 View Repository
+
+
+---
+
+💻 Data Entry App
+
+Simple data entry application with clean UI and local storage functionality.
+🔗 View Live App
+
+
+---
+
+💬 Chatbot Assistant
+
+An embedded chatbot assistant integrated into the portfolio for interaction and demonstration.
+🌐 Hosted on Vercel
+
+
+---
+
+🏢 Internship Portfolio
+
+Office of the City Prosecutor
+Confidential project (not publicly shared)
+
+
+---
+
+📊 GitHub Stats
+
+
+
+
+---
+
+📈 Most Used Languages
+
+
+
+
+---
+
+🎬 Video Samples
+
+AI-generated and edited videos showcasing content creation skills
+
+Embedded directly in the portfolio for demonstration
+
+
+
+---
+
+📬 Contact
+
+📧 Email: paulcarandangml1987@gmail.com
+
+💻 GitHub: GetWrecker
+
+
+
+---
+
+⭐ Notes
+
+This portfolio is continuously improving as I grow in:
+
+🤖 AI tools & automation
+
+💻 Programming
+
+🎬 Content creation
+
+🗨️ Customer support
+
+
 
 ## 🔥 What I Offer
 
