@@ -10,7 +10,7 @@
 🌐 Live Demo
 
 👉 View Portfolio
-(Replace with your actual Vercel link)
+https://paul-a-carandang.vercel.app/
 
 
 ---
