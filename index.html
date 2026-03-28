@@ -389,6 +389,31 @@ frameborder="0" allowfullscreen></iframe>
 </footer>
 
 <script>
+const elements = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+
+function toggleMode(){
+  document.body.classList.toggle('light');
+}
+
+const text = "Non-Voice Customer Support | AI Video Creator | Programmer";
+let i = 0;
+function type(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 40);
+  }
+}
+type();
+  
 async function sendMessage() {
   const input = document.getElementById("user-input");
   const chatBox = document.getElementById("chat-box");
