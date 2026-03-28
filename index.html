@@ -389,30 +389,34 @@ frameborder="0" allowfullscreen></iframe>
 </footer>
 
 <script>
-const elements = document.querySelectorAll('.fade');
-window.addEventListener('scroll', () => {
-  elements.forEach(el => {
-    const position = el.getBoundingClientRect().top;
-    if(position < window.innerHeight - 100){
-      el.classList.add('show');
-    }
-  });
-});
+async function sendMessage() {
+  const input = document.getElementById("user-input");
+  const chatBox = document.getElementById("chat-box");
 
-function toggleMode(){
-  document.body.classList.toggle('light');
-}
+  const userMessage = input.value.trim();
+  if (!userMessage) return;
 
-const text = "Non-Voice Customer Support | AI Video Creator | Programmer";
-let i = 0;
-function type(){
-  if(i < text.length){
-    document.getElementById("typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(type, 40);
+  chatBox.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
+  input.value = "";
+
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ message: userMessage })
+    });
+
+    const data = await response.json();
+
+    chatBox.innerHTML += `<p><strong>AI:</strong> ${data.reply}</p>`;
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+  } catch (error) {
+    chatBox.innerHTML += `<p style="color:red;">Error connecting to server.</p>`;
   }
-}
-type();
+      }
 </script>
 
 </body>
