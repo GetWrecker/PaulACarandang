@@ -318,14 +318,22 @@ to improve productivity and organization.
 </section>
 
 <section class="chatbot-section">
-<h2>Ai Portfolio Chat Assistant (Not Available for Now)</h2>
-<p>This chatbot can answer questions about my skills, projects, and experience.(When it's done)</p>
-<iframe 
-src="https://chatbot-pro-mu.vercel.app/"
-width="100%" 
-height="600"
-style="border:none; border-radius:12px;">
-</iframe>
+  <h2>💬 AI Portfolio Assistant</h2>
+  <p>Ask anything about my skills, projects, or experience.</p>
+
+  <div id="chat-box" style="
+    background:#020617;
+    padding:15px;
+    border-radius:10px;
+    height:300px;
+    overflow-y:auto;
+    margin-bottom:10px;
+  "></div>
+
+  <input id="user-input" placeholder="Type a message..."
+    style="width:70%;padding:10px;border-radius:5px;border:none;">
+
+  <button onclick="sendMessage()" class="btn">Send</button>
 </section>
 
 <section id="videos" class="fade">
