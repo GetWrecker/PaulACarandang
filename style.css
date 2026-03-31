@@ -1,0 +1,14 @@
+.chatbot-frame-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: transparent; /* Matches your portfolio background */
+}
+
+/* Optional: Make the iframe smaller on very small screens */
+@media (max-width: 480px) {
+    iframe {
+        height: 500px;
+        max-width: 95%;
+    }
+}
